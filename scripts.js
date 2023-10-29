@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const grid = document.getElementById('grid');
     const resetBtn = document.getElementById('reset');
-    const traps = ["38: ataque +2 (6x)", "Armadilha de urso: dano +1", "Calabouço: dano +2",
-    "Sonífero: 1 rodada parado", "Tranquilizante: ataque e esquiva pela metade", "Arpão: ataque +3 (1x)",
-    "Empalamento: dano +3"];
+    const traps = ["Armadilha de urso: dano +1", "Sonífero: não joga (1x)",
+    "Tranquilizante: ataque e esquiva pela metade", "Empalamento: no +3", "Praga: reduz tudo em -2 (2x)",
+    "Hipnose: ataque amigo", "Sange-suga: dano +1", "Arpão: ataque +3 (1x)",
+    "Soco glês de prata: ataque +1", "Semente dos deuses: +2 de vida", "Semente dos deuses: +2 de vida",
+    "Semente dos deuses: +2 de da", "Semente dos deuses: +2 de vida", "Semente dos deuses: +2 de vida"];
 
     function createButton(id) {
         const button = document.createElement('button');
