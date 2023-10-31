@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const buttonNumber = parseInt(this.innerText);
                 if (randomTraps.includes(buttonNumber)) {
                     alert(`${traps[randomTraps.indexOf(buttonNumber)]}`);
-                    this.classList.add('red');
+                    if (this.classList.contains('blue') || this.classList.contains('green')) {
+                        this.classList.remove('blue', 'green');
+                        this.classList.add('red');
+                    }
                 }
             });
             grid.appendChild(button);
