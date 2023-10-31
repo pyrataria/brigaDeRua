@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (this.classList.contains('blue') || this.classList.contains('green')) {
                         this.classList.remove('blue', 'green');
                         this.classList.add('red');
+                    } else {
+                        this.classList.add('red');
                     }
                 }
             });
