@@ -25,7 +25,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 2px;
     margin-top: 20px;
-    max-width: 400px; /* Adiciona uma largura máxima à grade para evitar que se estenda indefinidamente em telas grandes */
+    max-width: 400px;
 }
 
 .button {
@@ -43,7 +43,33 @@ body {
     color: black;
 }
 
-.reset-btn {
+.button.blue {
+    background-color: #36d0ff;
+    color: black;
+}
+
+.button.green {
+    background-color: #65ff36;
+    color: black;
+}
+
+.button.purple {
+    background-color: #de36ff;
+    color: black;
+}
+
+.button-container {
+    display: flex;
     margin-top: 20px;
+    justify-content: space-between;
     font-size: 16px;
+}
+
+.appear-btn, .reset-btn {
+    flex-grow: 1; /* Faz ambos os botões crescerem igualmente, ocupando o espaço disponível */
+    margin: 0 5px; /* Adiciona um pequeno espaçamento entre os botões */
+}
+
+.appear-btn img, .reset-btn img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do botão */
 }
