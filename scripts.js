@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const resetBtn = document.getElementById('reset');
     const appearBtn = document.getElementById('appear'); 
 
-    const traps = ["Armadilha de urso: dano +1", "Sonífero: parado (1x)", "Arpão: ataque +3 (1x)",
-    "Tranquilizante: ataque e esquiva -2", "Empalamento: dano +3", "Praga: reduz tudo em -2 (2x)",
-    "Hipnose: ataque amigo (1x)", "Sange-suga: dano +1", "Soco glês de prata: ataque +1",
-    "Semente dos deuses: +2 de vida", "Semente dos deuses: +2 de vida", "Semente dos deuses: +2 de vida",
+    const traps = ["Armadilha de urso: dano +1", "Sonífero: parado (1x)", "Iron maiden: dano +3",
+    "Tranquilizante: ataque e esquiva -2 (2x)", "Empalamento: dano +3", "Praga: reduz tudo em -2 (2x)",
+    "Hipnose: fogo amigo (1x)", "Sange-suga: dano +1 (1x)", "Cova: dano +1 e 6 no dado para sair",
+    "Arpão: ataque único (-1 ∞ de 1 em 1x)", "bomba de fumaça: deslocamento extra (2x)",
+    "Maça: ataque +1", "Martelo de pena: ataque +1", "Semente dos deuses: +2 de vida",
     "Semente dos deuses: +2 de vida", "Semente dos deuses: +2 de vida"];
 
     function createButton(id) {
